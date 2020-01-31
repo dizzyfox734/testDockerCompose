@@ -3,10 +3,4 @@ services:
 
   test:
     image: 10.10.70.29:5000/registry/test:1.0
-    networks:
-      - test-net
     command: echo "Hello World\n"
-
-networks:
-  test-net:
-    driver: bridge
