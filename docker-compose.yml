@@ -1,16 +1,10 @@
-version: '2.2'
+version: "2.0"
 services:
 
   test:
     image: 10.10.70.29:5000/registry/test:1.0
     networks:
       - test-net
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost"]
-      interval: 1m30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
     command: echo "Hello World\n"
 
 networks:
