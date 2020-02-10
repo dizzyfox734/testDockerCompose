@@ -1,6 +1,8 @@
-version: "2"
+version: '2.0'
 services:
-
-  test:
-    image: 10.10.70.29:5000/registry/test:1.0
-    command: echo "Hello World\n"
+  redis-master:
+    image: 'redis:5.0-alpine'
+    restart: always
+  redis-slave:
+    image: 'redis:5.0-alpine'
+    restart: always
