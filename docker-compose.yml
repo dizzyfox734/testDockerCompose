@@ -6,5 +6,3 @@ services:
   redis-slave:
     image: 'redis:5.0-alpine'
     restart: always
-  ubuntu:
-    image: 'ubuntu:16.04'
